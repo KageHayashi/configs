@@ -1,1 +1,1 @@
-# tmux_conf
+# configs
