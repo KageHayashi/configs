@@ -1,0 +1,6 @@
+# PROMPT with ip address instead of hostname if tun0 is connected
+
+if ifconfig | grep -q 'tun0' ; then
+    tun0_IP=$(ifconfig | grep 'tun0' -A 1 | grep 'inet' | cut -d: -f2 | awk '{ print $2}')
+    PROMPT=$'%F{%(#.blue.green)}┌──${debian_chroot:+($debian_chroot)──}(%B%F{%(#.red.blue)}%n%(#.���.❖)${tun0_IP}%b%F{%(#.blue.green)})-[%B%F{reset}%(6~.%-1~/…/%4~.%5~)%b%F{%(#.blue.green)}]\n└─%B%(#.%F{red}#.%F{blue}$)%b%F{reset} '
+fi
