@@ -2,6 +2,7 @@
 NEWLINE='
 '
 DIA_X='❖' #\u2756
+DIA_Y='◈'
 
 YIN_YANG='☯' #\u262F
 TRIGRAM_HEAVEN='☰' #\u2630
@@ -23,7 +24,22 @@ DIA_LESS_YANG='⚎' #\u268E
 DIA_GREAT_YIN='⚏' #\u268F
 DIA_LESS_YIN='⚍' #\u268D
 
+# ◆
+# ⦗⦘
+# ⸗
+# ⲷ
+# ▰▱
+# ⴵ
+# ◆ ◇ ◈
+FULL_HEX='⬣'
+PROGRESS_BAR='▰▱'
+
+#PROMPT="
+#%F{033}⦗%F{001}影%F{033}⸗%F%F{001}KAGE%F{033}⦘%F{039} ▰ %B%F{051}%0~/%b%f
+#  %F{075}└╼ %F{123}${DIA_Y}%f "
 
 PROMPT="
-%F{033}[%K{000}%F{001}影╸KAGE%F{033}%k] %F{039}◆ %B%F{051}%0~/%b%f
-  %F{075}└╼ %F{123}${DIA_X}%f "
+%F{033}⦗%F{001}影%F{033}⸗%F%F{001}KAGE%F{033}⦘%F{039} ◈ %B%F{051}%0~/%b%f
+ %F{075}${PROGRESS_BAR}%F{123}%f "
+
+
