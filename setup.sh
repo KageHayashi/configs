@@ -8,7 +8,7 @@ apt update
 apt install terminator tmux ghidra xclip
 
 # Basic aliases
-echo "alias set-clip='xclip -selection clipboard'" >> /home/kali/zshrc
+echo "alias set-clip='xclip -selection clipboard'" >> /home/kali/.zshrc
 
 # Tmux & Vim configs
 cp ./.tmux.conf /home/kali/
